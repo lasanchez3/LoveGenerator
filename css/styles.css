@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Gradient */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background: linear-gradient(60deg, #ffb6b0, #f4845f);
+}
+
+.header {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2em;
+    background: #4a2e2e;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Title Section */
+.title-container {
+    padding: 30px;
+}
+
+/* Self-Love Illustration */
+.main-illustration {
+    width: 50%; /* Make it responsive */
+    max-width: 500px; /* Ensures it's not too big */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 1.2em;
+    padding: 0 20px;
+    margin-top: 70px;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    background: #4a2e2e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.compliment-section {
+    margin-top: 30px;
+}
+
+/* Speech Bubble */
+.speech-bubble {
+    background: #ffebd6;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    display: inline-block;
+    max-width: 80%;
+}
+
+/* Compliment Section */
+.compliment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart-counter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#heart {
+    width: 150px; /* Adjust the size of the heart */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+#click-count {
+    position: absolute;
+    font-size: 30px; /* Increase size */
+    font-weight: bold;
+    color: white; /* Ensure visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Keeps it centered */
+}
+
+/* Heart Image */
+.heart-image {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease-in-out; /* Animation for beating effect */
+}
+
+/* Click Counter (Placed Above the Heart) */
+.click-counter {
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5A1F1F;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Beating Animation */
+.heart-beat {
+    animation: beat 0.2s ease-in-out;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.bottom-image img {
+    width: 40%; /* Adjust to be proportional */
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    margin-top: 60px;
+}
